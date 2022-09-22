@@ -24,8 +24,6 @@ public class AttendeesController {
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Attendee> postAtendee(@RequestBody Attendee attendee, HttpServletRequest request) throws IOException {
 
-        System.out.println("JSON: " + new String(request.getInputStream().readAllBytes()));
-
         Optional<Attendee> tempAttendee = this.attendeesRepository.findByEmail(attendee.getEmail());
         if (tempAttendee.isPresent()) {
             if (attendee.getId() == null ||

@@ -5,7 +5,7 @@ import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 
-@Container(containerName = "atendees")
+@Container(containerName = "attendees")
 public class Attendee {
 
     @Id

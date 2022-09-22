@@ -8,7 +8,7 @@
         <version>2.7.3</version>
     </parent>
     <groupId>com.datacom</groupId>
-    <artifactId>demo-leads-and-opps-api</artifactId>
+    <artifactId>demo-leads-and-opples-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo-leads-and-opps-api</name>
     <description>Leads and opportunities registration API</description>
@@ -21,7 +21,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-            <version>2.5.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
